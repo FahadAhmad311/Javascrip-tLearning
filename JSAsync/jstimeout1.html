@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Timeout </title>
+</head>
+<body>
+    <h1 style="color: blueviolet;"> Timeout Function</h1>
+    <h2 style="color: green;"> SetTimeOut with a Callback</h2>
+
+    <p style="color: red;"> Wait 3 seconds for this page to change</p>
+    <h1 id="demo" style="color: blue;"></h1>
+<script>
+    setTimeout(function(){
+        myFunction("I love you");
+    },3000);
+    function myFunction(value){
+        document.getElementById("demo").innerHTML=value;
+    }
+
+</script>
+</body>
+</html>
